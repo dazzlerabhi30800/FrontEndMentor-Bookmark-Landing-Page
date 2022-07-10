@@ -3,6 +3,20 @@ html {
     overflow-x: hidden;
 }
 
+body {
+    width: 100%;
+    position: relative;
+    overflow-y: visible;
+    height: auto;
+}
+
+body.active {
+    width: 100%;
+    position: relative;
+    overflow-y: hidden;
+    height: 100vh;
+}
+
 .App {
     height: auto;
     font-family: 'Rubik', sans-serif;

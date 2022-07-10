@@ -6,6 +6,7 @@ function Navbar() {
 
   function handleClick() {
     setClick((prevState) => !prevState);
+    document.body.classList.toggle('active');
   }
   return (
     <nav

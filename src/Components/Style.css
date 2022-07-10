@@ -169,3 +169,81 @@
     left: -65%;
     top: 44%;
 }
+
+
+/* ACCORDIAN BUTTON  */
+
+.accordian--card {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    background: rgb(255, 255, 255); 
+    padding: 5px 8px;
+}
+
+.accordian--card h6 {
+    position: relative;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 100%;
+    /* background: white; */
+    padding: 5px 8px;
+    cursor: pointer;
+    color: black;
+    transition: all .3s linear;
+}
+.accordian--card h6:hover {
+    color: red;
+}
+.accordian--card p {
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    padding: 5px 8px;
+    font-size: .9rem;
+    line-height: 1.8;
+    transition: all .3s linear;
+    opacity: 0;
+}
+.accordian--card.active p {
+    height: auto;
+    overflow: visible;
+    opacity: 1;
+}
+.accordian--card h6::after {
+    position: absolute;
+    content :'⌄';
+    top: -37%;
+    right: 5px;
+    font-size: 1.8rem;
+    color: black;
+    transition: all .3s linear;
+}
+.accordian--card.active h6::after {
+    transform: rotate(180deg);
+    color: red;
+    top: 5%;
+}
+
+/* SIGN UP  */
+
+.input--wrapper {
+    transition: all .3s linear;
+}
+
+.input--wrapper .input--container input {
+    border:none;
+    outline: none;
+}
+.input--wrapper .input--container input:focus {
+    border: none;
+}
+
+.input--container img {
+    opacity: 0;
+    transition: all .3s linear;
+}
+
+ img.error {
+    opacity: 1;
+}
