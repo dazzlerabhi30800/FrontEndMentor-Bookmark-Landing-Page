@@ -6,6 +6,7 @@ import Feature from './Components/Feature';
 import Extension from './Components/Extension';
 import Accordian from './Components/Accordian';
 import SignUp from './Components/SignUp';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
        <Accordian />
        <SignUp />
       </main>
+      <Footer />
     </div>
   );
 }

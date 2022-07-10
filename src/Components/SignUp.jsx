@@ -4,6 +4,7 @@ import './Style.css'
 function SignUp() {
     const [inputText, setInputText] = useState('');
     const [error, setError] = useState(false); 
+    const [errorText, setErrorText] = useState('');
 
     function handleChange(e) {
         setInputText(e.target.value);
@@ -15,13 +16,12 @@ function SignUp() {
         if(inputText !== '' && inputText.match(mailFormat)) {
             setError(prevState => prevState = false);
             errorSpan.style.display = 'block';
-            errorSpan.textContent = "Your email has been verified";
-            console.log(inputText);
+            setErrorText('Your Email has been verified'); 
         }
         else{
             setError(prevState => prevState = true);
             errorSpan.style.display = "block";
-            errorSpan.textContent = "Whoops.make sure it's an email"
+            setErrorText("Whoops are you sure it's an email"); 
         }
     }
 
@@ -34,7 +34,7 @@ function SignUp() {
                 <input type="email" placeholder='Enter your Email' onChange={handleChange} value={inputText} className='p-1 px-2 text-black rounded-sm w-full' />
                 <img src="../images/icon-error.svg" className={error ? 'error h-6' : 'h-6'} alt="" />
                 </div>
-                <span className="error text-sm pl-2 italic hidden transition duration-300 ease-in-out"></span>
+                <span className="error text-sm pl-2 italic hidden transition duration-300 ease-in-out">{errorText}</span>
             </div>
             <button onClick={onSubmit} className='bg-red-500 py-2 px-4 text-xl rounded-md font-medium cursor-pointer transition duration-300 ease-in-out hover:bg-red-600 w-3/4'>Contact</button>
         </div>

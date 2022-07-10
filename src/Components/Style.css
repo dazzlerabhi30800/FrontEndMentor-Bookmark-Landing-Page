@@ -247,3 +247,23 @@
  img.error {
     opacity: 1;
 }
+
+
+/* FOOTER  */
+
+footer {
+    background: var(--Very-Dark-Blue);
+}
+
+
+.icons > svg {
+    fill : white;
+    transition: all .3s;
+    cursor: pointer;
+}
+.icons  svg:nth-child(1):hover path {
+    fill : rgb(69, 96, 247);
+}
+.icons svg:nth-child(2):hover path {
+     fill: cyan;
+}
