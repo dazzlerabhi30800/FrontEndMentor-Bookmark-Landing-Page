@@ -17,7 +17,7 @@ function Accordian() {
         Here are some of our FAQs. If you have any other questions you'd like
         answered please feel free to email us.
       </p>
-      <hr className="bg-red-500 w-full" />
+      <hr className="bg-slate-500 w-full" />
       <div className="accordian--container">
         <div className="accordian--card" onClick={handleAccordian}>
           <h6>What is Bookmark?</h6>

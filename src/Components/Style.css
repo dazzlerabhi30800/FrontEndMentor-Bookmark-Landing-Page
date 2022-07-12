@@ -210,14 +210,15 @@ nav.active {
   content: "⌄";
   top: -37%;
   right: 5px;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: black;
   transition: all 0.3s linear;
   font-weight: 500;
   padding: 5px;
+  transform: scaleX(1.5);
 }
 .accordian--card.active h6::after {
-  transform: rotate(180deg);
+  transform: rotate(180deg) scaleX(1.5);
   color: red;
   top: 5%;
 }

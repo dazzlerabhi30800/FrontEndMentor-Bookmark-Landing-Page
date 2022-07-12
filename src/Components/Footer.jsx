@@ -3,9 +3,9 @@ import './Style.css';
 
 function Footer() {
     return(
-        <footer className='p-8 flex flex-col md:flex-row md:justify-around justify-center items-center gap-10 text-white'>
+        <footer className='p-8 flex flex-col md:flex-row md:justify-evenly justify-center items-center gap-10 text-white md:px-44'>
                <img className='w-52' src="../images/logo-bookmark.svg" alt="" /> 
-               <ul className='flex flex-col md:flex-row gap-6 text-center'>
+               <ul className='flex flex-col md:flex-row gap-6 text-center md:mr-auto md:ml-20'>
                     <li className='cursor-pointer uppercase tracking-widest transition ease-in duration-300 hover:text-indigo-400'>Home</li>
                     <li className='cursor-pointer uppercase tracking-widest transition ease-in duration-300 hover:text-indigo-400'>Pricing</li>
                     <li className='cursor-pointer uppercase tracking-widest transition ease-in duration-300 hover:text-indigo-400'>Contact</li>
