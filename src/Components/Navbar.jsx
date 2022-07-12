@@ -13,7 +13,7 @@ function Navbar() {
       className={
         click
           ? "p-4 flex justify-between active items-center transition ease-in-out duration-300 shadow-none"
-          : "p-4 flex justify-between bg-white shadow-md items-center"
+          : "navbar p-4 flex justify-between bg-white shadow-md items-center md:shadow-none"
       }
     >
       <div className={ click ? "logo--img active" : "logo--img"}>
@@ -39,10 +39,10 @@ function Navbar() {
         className={
           click
             ? "links--wrapper flex flex-col gap-4 p-10 absolute left-1/2 -translate-x-1/2 translate-y-0 active w-full transition ease-in-out duration-300"
-            : "links--wrapper flex flex-col gap-4 p-1i absolute top-10 left-1/2 -translate-x-1/2 -translate-y-[22rem] w-full transition ease-in-out duration-300"
+            : "links--wrapper flex flex-col gap-4 p-1 absolute top-10 left-1/2 -translate-x-1/2 -translate-y-[25rem] w-full transition ease-in-out duration-300"
         }
       >
-        <ul className="nav--list flex flex-col items-center gap-0 cursor-pointer">
+        <ul className="nav--list flex flex-col items-center gap-2 p-4 cursor-pointer justify-center text-center">
           <li className="text-xl text-white cursor-pointer flex w-full items-center py-4 justify-center">Features</li>
           <li className="text-xl text-white cursor-pointer flex w-full items-center py-4 justify-center">Pricing</li>
           <li className="text-xl text-white cursor-pointer flex w-full items-center py-4 justify-center">Contact</li>
@@ -59,7 +59,7 @@ function Navbar() {
       <div className="menu--btn cursor-pointer">
         <i
           onClick={handleClick}
-          className={click ? "fas fa-times text-white text-md" : "fas fa-bars text-md"}
+          className={click ? "fas fa-times text-white text-md" : "fas fa-bars text-md md:hidden"}
         ></i>
       </div>
     </nav>

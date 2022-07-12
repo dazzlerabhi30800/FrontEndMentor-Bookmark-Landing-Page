@@ -2,7 +2,7 @@ import React from 'react';
 
 function Extension() {
     return(
-        <div className="feature--container flex flex-col justify-center items-center text-center p-4">
+        <div className="features--container flex flex-col justify-center items-center text-center p-4">
             <h5 className='text-xl font-md my-2'>Download the Extension</h5>
             <p className='text-md text-slate-500 mb-6 mt-2 px-10'>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favorite sites.</p>
 

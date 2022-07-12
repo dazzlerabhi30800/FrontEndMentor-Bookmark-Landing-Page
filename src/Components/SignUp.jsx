@@ -26,17 +26,17 @@ function SignUp() {
     }
 
     return(
-        <div className="signup--conatainer flex flex-col justify-center items-center gap-4 bg-indigo-600 py-4 text-white">
+        <div className="signup--conatainer flex flex-col justify-center items-center gap-4 bg-indigo-600 py-4 text-white md:py-8">
             <span className='font-small uppercase tracking-wider '>35,000+ already joined</span>
             <h6 className='font-medium text-2xl text-center px-12'>Stay up-to-date with what we're doing</h6>
-            <div className={error ? "input--wrapper flex flex-col bg-red-500 p-1 rounded-md gap-2 w-3/4" : "input--wrapper flex flex-col bg-transparent p-1 rounded-md gap-2 w-3/4"}>
+            <div className={error ? "input--wrapper flex flex-col bg-red-500 p-1 rounded-md gap-2 w-3/4" : "input--wrapper flex flex-col bg-transparent p-1 rounded-md gap-2 w-3/4 md:w-1/4"}>
                 <div className="input--container flex bg-white rounded-sm py-1 justify-between px-2 items-center">
                 <input type="email" placeholder='Enter your Email' onChange={handleChange} value={inputText} className='p-1 px-2 text-black rounded-sm w-full' />
                 <img src="../images/icon-error.svg" className={error ? 'error h-6' : 'h-6'} alt="" />
                 </div>
                 <span className="error text-sm pl-2 italic hidden transition duration-300 ease-in-out">{errorText}</span>
             </div>
-            <button onClick={onSubmit} className='bg-red-500 py-2 px-4 text-xl rounded-md font-medium cursor-pointer transition duration-300 ease-in-out hover:bg-red-600 w-3/4'>Contact</button>
+            <button onClick={onSubmit} className='bg-red-500 py-2 px-4 text-xl rounded-md font-medium cursor-pointer transition duration-300 ease-in-out hover:bg-red-600 w-3/4 md:w-72'>Contact</button>
         </div>
     )
 }

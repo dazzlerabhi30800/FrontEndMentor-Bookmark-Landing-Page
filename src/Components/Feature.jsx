@@ -31,7 +31,7 @@ function Feature(e) {
         </p>
       </div>
 
-      <div className="features--link flex flex-col gap-2">
+      <div className="features--link flex flex-col gap-2 md:gap-0">
         <hr />
         <a data-index="0" onClick={handleLink} className="py-2 cursor-pointer active">Simple Bookmarking</a>
         <a data-index="1" onClick={handleLink} className="py-2 cursor-pointer">Speedy Searching</a>
@@ -44,7 +44,7 @@ function Feature(e) {
         <div className="info--wrapper py-6 px-6 flex flex-col text-center gap-4">
           <h3 className="text-2xl font-medium">Bookmark in one click</h3>
           <p className="text-[1rem] text-slate-500 ">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-          <button className="bg-indigo-500 w-fit mx-auto py-2 px-4 text-lg rounded-lg text-white font-bold cursor-pointer transition ease-in-out duration-300 hover:bg-indigo-600 shadow-slate-400 shadow-lg hidden">More info</button>
+          <button className="bg-indigo-500 w-fit mx-auto  py-2 px-4 text-lg rounded-lg text-white font-bold cursor-pointer transition ease-in-out duration-300 hover:bg-indigo-600 shadow-slate-400 shadow-lg hidden md:block">More info</button>
         </div>
 
       </div>
