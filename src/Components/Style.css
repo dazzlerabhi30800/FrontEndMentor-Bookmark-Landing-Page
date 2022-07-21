@@ -594,6 +594,7 @@ footer {
     transition: all 0.3s linear;
     font-weight: 500;
     padding: 5px;
+    transform : scaleX(1);
   }
   .accordian--card.active h6::after {
     transform: rotate(180deg);
